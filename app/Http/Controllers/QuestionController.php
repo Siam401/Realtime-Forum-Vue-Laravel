@@ -9,7 +9,11 @@ use App\Http\Resources\QuestionResource;
 
 class QuestionController extends Controller
 {
-    
+    public function __construct()
+    {
+        $this->middleware('JWT', ['except' => ['index','show']]);
+    }
+
     public function index()
     {
         return QuestionResource::collection(Question::latest()->get());
