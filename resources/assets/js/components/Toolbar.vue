@@ -5,11 +5,11 @@
 
       <v-spacer></v-spacer>
       <router-link to="/login">
-        <v-btn flat>Login</v-btn>
+        <v-btn >Login</v-btn>
       </router-link>
-      <v-btn flat>Forum</v-btn>
-      <v-btn flat>Ask Question</v-btn>
-      <v-btn flat>Category</v-btn>
+      <v-btn >Forum</v-btn>
+      <v-btn >Ask Question</v-btn>
+      <v-btn >Category</v-btn>
     </v-toolbar>
 </template>
 
